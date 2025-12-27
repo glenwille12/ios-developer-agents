@@ -7,6 +7,8 @@ A collection of AI agents and skills designed to supercharge your iOS developmen
 | Agent | Description | Model |
 |-------|-------------|-------|
 | [App Store Validator](agents/app-store-validator) | Pre-validate your iOS app against Apple's Review Guidelines to catch rejection issues early. | Claude 4.5 Opus / Sonnet |
+| [Security Auditor](agents/security-auditor) | Comprehensive security audit against OWASP Mobile Top 10 2024, detecting vulnerabilities, hardcoded secrets, and insecure configurations. | Claude 4.5 Opus / Sonnet |
+| [Accessibility Validator](agents/accessibility-validator) | Audit your app for accessibility compliance with Apple HIG, WCAG 2.2, VoiceOver, Dynamic Type, and inclusive design standards. | Claude 4.5 Opus / Sonnet |
 
 ## How to Use
 
