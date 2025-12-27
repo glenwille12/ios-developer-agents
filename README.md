@@ -1,22 +1,95 @@
 # iOS Developer Agents
 
-A collection of AI agents and skills designed to supercharge your iOS development workflow. These agents are optimized for use with LLM-based coding tools (like Cursor, Windsurf, or generic LLM chats).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## Available Agents
+AI agents to validate, audit, and improve your iOS apps before release.
 
-| Agent | Description | Model |
-|-------|-------------|-------|
-| [App Store Validator](agents/app-store-validator) | Pre-validate your iOS app against Apple's Review Guidelines to catch rejection issues early. | Claude 4.5 Opus / Sonnet |
-| [Security Auditor](agents/security-auditor) | Comprehensive security audit against OWASP Mobile Top 10 2024, detecting vulnerabilities, hardcoded secrets, and insecure configurations. | Claude 4.5 Opus / Sonnet |
-| [Accessibility Validator](agents/accessibility-validator) | Audit your app for accessibility compliance with Apple HIG, WCAG 2.2, VoiceOver, Dynamic Type, and inclusive design standards. | Claude 4.5 Opus / Sonnet |
+## What's Included
 
-## How to Use
+| Agent | Purpose |
+|-------|---------|
+| **App Store Validator** | Pre-validate against Apple's Review Guidelines to catch rejections early |
+| **Security Auditor** | Audit against OWASP Mobile Top 10 2024 and iOS security best practices |
+| **Accessibility Validator** | Check compliance with Apple HIG, WCAG 2.2, VoiceOver, and Dynamic Type |
 
-1. **Select an Agent**: Navigate to the agent's directory (e.g., `agents/app-store-validator`).
-2. **Copy the Prompt**: Open the `.md` file corresponding to the agent (e.g., `app-store-validator.md`).
-3. **Inject Context**: Paste the prompt into your LLM chat. *Crucial*: Most agents have a "Project Specific Context" section at the bottom. Make sure to fill this in with details about your specific app to get the best results.
-4. **Run**: Let the agent analyze your codebase or answer your questions.
+## Quick Start
 
-## Contribution
+### Claude Code
 
-Contributions are welcome! If you have a prompt or agent workflow that saves you time, feel free to open a PR.
+```bash
+# Copy to your iOS project
+cp -r .claude/ /path/to/your/ios-project/
+
+# Run commands
+/validate-appstore
+/audit-security
+/audit-accessibility
+```
+
+[Full Claude Code guide](docs/integrations/claude-code.md)
+
+### Cursor
+
+```bash
+# Copy to your iOS project
+cp -r .cursor/ /path/to/your/ios-project/
+
+# Rules auto-activate when editing Swift, Info.plist, etc.
+```
+
+[Full Cursor guide](docs/integrations/cursor.md)
+
+### Claude.ai Projects
+
+1. Create a new Project at [claude.ai](https://claude.ai)
+2. Copy instructions from `claude-projects/[agent]-instructions.md`
+3. Paste into Project Instructions
+4. Upload your iOS files
+
+[Full Claude Projects guide](docs/integrations/claude-projects.md)
+
+### Direct Chat
+
+Copy the full agent prompt from `agents/[name]/[name].md` and paste into any LLM chat.
+
+## Getting Started Guides
+
+- [Solo Developers](docs/getting-started/solo-developer.md) - Quick 5-minute setup
+- [iOS Teams](docs/getting-started/team-setup.md) - Shared workflows and PR integration
+- [Contributors](docs/getting-started/contributor-guide.md) - Create new agents
+
+## Project Structure
+
+```
+ios-developer-agents/
+  agents/                    # Full agent prompts (source of truth)
+  .claude/                   # Claude Code commands & skills
+  .cursor/                   # Cursor rules (.mdc format)
+  claude-projects/           # Claude.ai Project templates
+  ai-rules/                  # Generic AI tool rules
+  docs/                      # Documentation
+```
+
+## Integration Options
+
+| Tool | Files | Activation |
+|------|-------|-----------|
+| Claude Code | `.claude/commands/`, `.claude/skills/` | Slash commands & auto |
+| Cursor | `.cursor/rules/*.mdc` | Auto on matching files |
+| Claude.ai | `claude-projects/*.md` | Manual setup |
+| Other AI tools | `ai-rules/*.txt` | Copy-paste |
+
+## Contributing
+
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Ideas for new agents:
+- Performance Auditor
+- Localization Validator
+- SwiftUI Best Practices
+- Testing Coverage Analyzer
+
+## License
+
+MIT License - see [LICENSE](LICENSE)
